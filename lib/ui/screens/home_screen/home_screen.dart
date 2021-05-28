@@ -1,3 +1,4 @@
+import 'package:dailytasks_flutter/config/constants.dart';
 import 'package:dailytasks_flutter/ui/pages/main_page/main_page.dart';
 import 'package:fluid_bottom_nav_bar/fluid_bottom_nav_bar.dart';
 import 'package:flutter/material.dart';
@@ -8,6 +9,24 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return SafeArea(
       child: Scaffold(
+        // floatingActionButton: Stack(
+        //   children: [
+        //     Positioned(
+        //       bottom: 40,
+        //       left: 0,
+        //       child: FloatingActionButton(
+        //         autofocus: false,
+        //         isExtended: false,
+        //         onPressed: () {},
+        //         child: Icon(
+        //           Icons.add,
+        //           size: 30,
+        //         ),
+        //         backgroundColor: kMainBlue.withAlpha(150),
+        //       ),
+        //     )
+        //   ],
+        // ),
         body: PageView(
           children: [MainPage()],
         ),
